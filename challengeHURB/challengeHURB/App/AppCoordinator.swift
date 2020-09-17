@@ -23,7 +23,8 @@ final class AppCoordinator: Coordinator {
     
     func loadViewController() -> UIViewController {
     
-        let viewModel = AppViewModel()
+        let dao = DAO()
+        let viewModel = AppViewModel(dao: dao)
         let viewController = AppViewController(viewModel: viewModel)
         
         viewModel.coordinator = self

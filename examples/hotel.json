@@ -412,7 +412,8 @@
             "isHotel": true,
             "category": "hotel",
             "smallDescription": "Espaço planejado para o total bem estar dos hóspedes que procuram prazer e comodidade em uma estadia na Serra.",
-            "amenities": [{
+            "amenities": [
+                {
                     "name": "Bar",
                     "category": "Comida / Bebida"
                 },
@@ -554,7 +555,8 @@
             "url": "https://www.hurb.com/hoteis/gramado/pousada-aardvark-inn-7987",
             "description": "Espaços charmosos, bons serviços, conforto nos detalhes e ambiente informalmente descontraído. \r\nCom atendimento personalizado feito por uma equipe de funcionários e gerenciamento familiar, buscamos oferecer constantemente um alto padrão de hospitalidade aliados a preços acessíveis.",
             "stars": 3,
-            "gallery": [{
+            "gallery": [
+                {
                     "description": "",
                     "url": "https://static.hotelurbano.com/reservas/prod0/7/7987/5d28d5cf6fa3c_pousada-aardvark-inn.jpg"
                 },
@@ -3217,5 +3219,4 @@
             }
         }
     ]
-
 }

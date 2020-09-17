@@ -37,7 +37,7 @@ public extension Coordinator {
     
     /// Add Coordinator to childs
     func addChild(_ coordinator: Coordinator) {
-        if !childCoordinators.contains { $0 === coordinator } {
+        if !childCoordinators.contains(where: { $0 === coordinator }) {
             childCoordinators.append(coordinator)
         }
         

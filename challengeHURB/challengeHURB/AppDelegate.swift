@@ -4,7 +4,7 @@ typealias LaunchOptionsType = [UIApplication.LaunchOptionsKey: Any]
 
 // MARK: Application
 @UIApplicationMain
-class AppDelegate: UIResponder {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Application Properties
     var orientation = UIInterfaceOrientationMask.portrait
@@ -18,11 +18,6 @@ class AppDelegate: UIResponder {
     // Application Coordinator
     var coordinator: Coordinator?
     
-}
-
-// MARK: - Application Extension
-extension AppDelegate: UIApplicationDelegate {
-    
     // MARK: Application Delegate Methods
     
     func application(_ application: UIApplication,
@@ -32,7 +27,7 @@ extension AppDelegate: UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return orientation
+        orientation
     }
     
     private func setupRootCoordinator() {
